@@ -16,7 +16,7 @@
                 var isLava = false;
                 var elem = document.querySelector('#title');
 
-                a = new Audio('lava.mp3');
+                a = new Audio('./lava.mp3');
                 b = new Audio('./no-lava.mp3');
 
                 function startLava() {
@@ -33,9 +33,9 @@
                                     elem.innerHTML = "The floor is Safe ✅"
 
                                     startLava();
-                                }, 8000);
+                                }, 20000);
                             
-                        }, Math.random() * 8000);
+                        }, Math.random() * 15000);
 
                  }
 

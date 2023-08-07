@@ -1,7 +1,9 @@
 <html>
     <head>
         <style>
-
+    	    body.lave{
+                background-color:red;
+            }
         </style>
     </head>
 
@@ -25,13 +27,14 @@
                 
                                 a.play();
                                 elem.innerHTML = "The floor is LAVA 🔥"
+                               document.body.classList.add("lava");
                         
                                 clearInterval( i ); 
 
                                 var y = window.setInterval(function () {                                    
                                     b.play();
                                     elem.innerHTML = "The floor is Safe ✅"
-
+                                    document.body.classList.remove("lava");
                                     clearInterval( y ); 
                                     startLava();
                                 }, 20000);

@@ -28,10 +28,11 @@
                         
                                 clearInterval( i ); 
 
-                                setTimeout(function( ) { 
+                                var y = window.setInterval(function () {                                    
                                     b.play();
                                     elem.innerHTML = "The floor is Safe ✅"
 
+                                    clearInterval( y ); 
                                     startLava();
                                 }, 20000);
                             
